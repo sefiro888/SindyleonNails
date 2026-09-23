@@ -1,6 +1,52 @@
 (function () {
   "use strict";
 
+  /* Indicador de abierto / cerrado ahora (horario real de Booksy, zona horaria de Canarias) */
+  var statusEls = document.querySelectorAll("[data-open-status]");
+  if (statusEls.length) {
+    var HOURS = {
+      0: [[600, 840], [870, 1080]], // domingo 10:00–14:00, 14:30–18:00
+      1: [[600, 1200]],             // lunes 10:00–20:00
+      2: [[600, 1200]],             // martes
+      3: [[600, 1200]],             // miércoles
+      4: [[600, 1200]],             // jueves
+      5: [[600, 840], [870, 1200]], // viernes 10:00–14:00, 14:30–20:00
+      6: [[600, 840], [870, 1080]]  // sábado 10:00–14:00, 14:30–18:00
+    };
+    var WEEKDAY_INDEX = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+
+    var getCanaryNow = function () {
+      try {
+        var parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: "Atlantic/Canary",
+          weekday: "short",
+          hour: "numeric",
+          minute: "numeric",
+          hour12: false
+        }).formatToParts(new Date());
+        var map = {};
+        parts.forEach(function (p) { map[p.type] = p.value; });
+        var hour = parseInt(map.hour, 10);
+        if (hour === 24) hour = 0;
+        return { day: WEEKDAY_INDEX[map.weekday], minutes: hour * 60 + parseInt(map.minute, 10) };
+      } catch (e) {
+        var now = new Date();
+        return { day: now.getDay(), minutes: now.getHours() * 60 + now.getMinutes() };
+      }
+    };
+
+    var now = getCanaryNow();
+    var ranges = HOURS[now.day] || [];
+    var isOpen = ranges.some(function (r) { return now.minutes >= r[0] && now.minutes < r[1]; });
+
+    statusEls.forEach(function (el) {
+      var dot = el.querySelector(".status-dot");
+      var text = el.querySelector(".status-text");
+      if (dot) dot.classList.add(isOpen ? "is-open" : "is-closed");
+      if (text) text.textContent = isOpen ? "Abierto ahora" : "Cerrado ahora";
+    });
+  }
+
   /* Rotación de fotos del hero (crossfade) */
   var heroPhotos = document.querySelectorAll(".hero-photo");
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
