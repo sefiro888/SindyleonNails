@@ -1,6 +1,27 @@
 (function () {
   "use strict";
 
+  /* Aparición progresiva al hacer scroll */
+  var revealEls = document.querySelectorAll(".reveal");
+  if (revealEls.length) {
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      revealEls.forEach(function (el) { observer.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+    }
+  }
+
   /* Menú hamburguesa (móvil) */
   var navToggle = document.getElementById("navToggle");
   var mobileNav = document.getElementById("mobileNav");

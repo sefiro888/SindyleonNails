@@ -42,8 +42,20 @@ Todas proceden del CDN público de fotos de Booksy (`d375139ucebi94.cloudfront.n
 | `nail-23.jpg` | Base burdeos con flores pintadas a mano y pedrería dorada | Color y diseño | Propio confirmado |
 | `nail-26.jpg` | Diseño marino muy elaborado con flores 3D, conchas y pedrería dorada | Floral, color · cabecera de grupo "Decoración" en Servicios y del bloque "Color y diseño" en Diseños | Propio confirmado |
 | `nail-30.jpg` | Francesa azul pastel con margaritas pintadas a mano | Francesa, floral | Propio confirmado |
+| `nail-24.jpg` | Diseño muy colorido con estrellas, rombos y pedrería sobre varios tonos pastel | Tira de galería en el inicio | Propio confirmado |
 | `nail-11.jpg`, `nail-18.jpg` | Muestran el rostro de la clienta además de las uñas | Excluidas deliberadamente por privacidad de las clientas, aunque son fotos públicas del propio negocio | No usadas |
-| `nail-24.jpg`, `nail-29.jpg` | Descargadas del mismo álbum público pero no revisadas individualmente | No usadas | Pendientes de revisión antes de publicar |
+| `nail-29.jpg` | Descargada del mismo álbum público pero no revisada individualmente | No usada | Pendiente de revisión antes de publicar |
+
+### Portada (inicio) — ampliación
+
+La portada (`index.html`) se amplió a partir del feedback de que resultaba demasiado escueta para ser la primera pantalla que ve una visitante. Se añadió, siempre con material propio (ninguna imagen de banco):
+
+- Una foto "polaroid" acento en el hero (`nail-15.jpg`), rotada, solo visible en escritorio.
+- Una franja de cifras reales (valoración, reseñas, seguidoras de Instagram, tamaño del equipo — todas verificadas en RESEARCH.md).
+- Una sección "Quiénes somos" con foto (`nail-08.jpg`) y texto ampliado, incluida la frase real de la biografía de Instagram como cita destacada.
+- Una tira de 6 fotos del portfolio (`nail-02`, `nail-26`, `nail-05`, `nail-23`, `nail-24`, `nail-28`) que enlaza a la galería completa.
+- Tres reseñas reales citadas literalmente de Booksy, con nombre de la clienta, servicio y persona del equipo mencionada (Teri/Milena, Nayara Suárez/Milena, Idaira/Sheila) — mismos datos ya documentados en `RESEARCH.md`.
+- Un CTA final a pantalla completa con foto (`nail-21.jpg`) antes del pie.
 
 ### Cabeceras de sección (banners)
 
