@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=2">
+<link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
 
@@ -54,8 +54,38 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-media">
-      <img src="assets/img/portfolio/nail-12.jpg" alt="Manicura francesa con contorno dorado y flores blancas en 3D, trabajo real de Sindy León Nails Design" class="hero-img">
+    <div class="hero-media" id="heroMedia">
+      <div class="hero-slideshow">
+        <img class="hero-slide is-active" src="assets/img/portfolio/nail-12.jpg" alt="Manicura francesa con contorno dorado y flores blancas en 3D, trabajo real de Sindy León Nails Design">
+        <img class="hero-slide" src="assets/img/portfolio/nail-26.jpg" alt="Diseño marino muy elaborado con flores 3D, conchas y pedrería dorada, trabajo real del estudio">
+        <img class="hero-slide" src="assets/img/portfolio/nail-02.jpg" alt="Francesa blanca con flor dorada en 3D y pedrería, trabajo real del estudio">
+        <img class="hero-slide" src="assets/img/portfolio/nail-28.jpg" alt="Francesa verde menta con contorno dorado y margaritas, trabajo real del estudio">
+      </div>
+
+      <svg class="hand-relief" viewBox="0 0 240 340" aria-hidden="true">
+        <path class="hr-palm" d="M75,338 L68,240 C66,200 90,180 120,180 C150,180 174,200 172,240 L165,338 Z"/>
+        <g class="hr-finger-group" transform="translate(70,230) rotate(-55)">
+          <rect class="hr-finger" x="-12" y="-60" width="24" height="62" rx="12"/>
+          <ellipse class="hr-nail" cx="0" cy="-44" rx="10" ry="13"/>
+        </g>
+        <g class="hr-finger-group" transform="translate(90,183) rotate(-16)">
+          <rect class="hr-finger" x="-9.5" y="-105" width="19" height="107" rx="9.5"/>
+          <ellipse class="hr-nail" cx="0" cy="-89" rx="7.5" ry="13"/>
+        </g>
+        <g class="hr-finger-group" transform="translate(120,178) rotate(0)">
+          <rect class="hr-finger" x="-9.5" y="-120" width="19" height="122" rx="9.5"/>
+          <ellipse class="hr-nail" cx="0" cy="-104" rx="7.5" ry="13"/>
+        </g>
+        <g class="hr-finger-group" transform="translate(150,183) rotate(16)">
+          <rect class="hr-finger" x="-9.5" y="-108" width="19" height="110" rx="9.5"/>
+          <ellipse class="hr-nail" cx="0" cy="-92" rx="7.5" ry="13"/>
+        </g>
+        <g class="hr-finger-group" transform="translate(170,200) rotate(32)">
+          <rect class="hr-finger" x="-8.5" y="-78" width="17" height="80" rx="8.5"/>
+          <ellipse class="hr-nail" cx="0" cy="-62" rx="6.5" ry="11"/>
+        </g>
+      </svg>
+
       <div class="hero-media-veil" aria-hidden="true"></div>
       <div class="hero-badge">
         <span class="stars" aria-hidden="true">★★★★★</span>
@@ -69,14 +99,14 @@
     </div>
     <div class="hero-copy">
       <img src="assets/img/logo-transparent.png" alt="" class="hero-watermark" aria-hidden="true">
-      <p class="eyebrow">Vecindario · Santa Lucía de Tirajana</p>
-      <h1>Sindy León<br><span>Nails Design</span></h1>
-      <p class="hero-lead">Expertos en realzar la belleza de tus manos. Acrílicas, kapping, semipermanente y diseños a medida, cita tras cita.</p>
-      <div class="hero-cta">
+      <p class="eyebrow hero-in" style="--d:0s">Vecindario · Santa Lucía de Tirajana</p>
+      <h1 class="hero-in" style="--d:0.12s">Sindy León<br><span>Nails Design</span></h1>
+      <p class="hero-lead hero-in" style="--d:0.24s">Expertos en realzar la belleza de tus manos. Acrílicas, kapping, semipermanente y diseños a medida, cita tras cita.</p>
+      <div class="hero-cta hero-in" style="--d:0.36s">
         <a href="https://booksy.com/es-es/23381_sindyleonnailsdesign_salon-de-unas_69860_balos" target="_blank" rel="noopener" class="btn btn-primary">Reservar en Booksy</a>
         <a href="https://wa.me/34697943291?text=Hola%2C%20quer%C3%ADa%20consultar%20una%20cita%20en%20Sindy%20Leon%20Nails%20Design" target="_blank" rel="noopener" class="btn btn-secondary">Consultar por WhatsApp</a>
       </div>
-      <p class="hero-rating">Equipo de 4 profesionales · Local en Vecindario · @sindyleonnailsdesign</p>
+      <p class="hero-rating hero-in" style="--d:0.46s">Equipo de 4 profesionales · Local en Vecindario · @sindyleonnailsdesign</p>
     </div>
   </section>
 
@@ -266,6 +296,6 @@
   <a href="https://wa.me/34697943291?text=Hola%2C%20quer%C3%ADa%20consultar%20una%20cita%20en%20Sindy%20Leon%20Nails%20Design" target="_blank" rel="noopener" class="btn btn-secondary">WhatsApp</a>
 </div>
 
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>

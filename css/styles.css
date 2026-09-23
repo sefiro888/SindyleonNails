@@ -194,6 +194,54 @@ p { margin: 0 0 1em; }
   pointer-events: none;
 }
 
+/* ---- Presentación de fotos con transición (Ken Burns) ---- */
+.hero-slideshow { position: absolute; inset: 0; will-change: transform; }
+.hero-slide {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 25%;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1.8s ease;
+}
+.hero-slide.is-active {
+  opacity: 1;
+  animation: hero-kenburns 7s ease-out forwards;
+}
+@keyframes hero-kenburns {
+  from { transform: scale(1.1); }
+  to { transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { transition: opacity 0.3s ease; }
+  .hero-slide.is-active { animation: none; transform: scale(1); }
+}
+
+/* ---- Ilustración de mano en relieve, dorada, sobre la foto ---- */
+.hand-relief {
+  position: absolute;
+  z-index: 1;
+  right: -6%;
+  bottom: -4%;
+  height: 78%;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  animation: hand-drift 10s ease-in-out infinite;
+}
+.hr-palm, .hr-finger { fill: none; stroke: #ffffff; stroke-width: 2.5; }
+.hr-nail { fill: #ffffff; opacity: 0.85; }
+@keyframes hand-drift {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(-1deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hand-relief { animation: none; }
+}
+@media (max-width: 719px) {
+  .hand-relief { height: 58%; opacity: 0.4; right: -10%; }
+}
+
 /* Insignia flotante de valoración sobre la foto del hero */
 .hero-badge {
   position: absolute;
@@ -237,6 +285,20 @@ p { margin: 0 0 1em; }
 .hero-cta { display: flex; flex-direction: column; gap: 12px; align-items: center; margin-bottom: 1.6em; }
 .hero-rating { font-size: 14px; color: var(--slate); }
 .stars { color: var(--gold-deep); letter-spacing: 1px; margin-right: 6px; }
+
+/* ---- Entrada animada del texto del hero (al cargar la página) ---- */
+.hero-in {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: hero-in 0.8s ease forwards;
+  animation-delay: var(--d, 0s);
+}
+@keyframes hero-in {
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-in { opacity: 1; transform: none; animation: none; }
+}
 .hero-scroll-cue {
   display: none;
 }
