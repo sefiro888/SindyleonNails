@@ -217,31 +217,6 @@ p { margin: 0 0 1em; }
   .hero-slide.is-active { animation: none; transform: scale(1); }
 }
 
-/* ---- Ilustración de mano en relieve, dorada, sobre la foto ---- */
-.hand-relief {
-  position: absolute;
-  z-index: 1;
-  right: -6%;
-  bottom: -4%;
-  height: 78%;
-  opacity: 0.5;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-  animation: hand-drift 10s ease-in-out infinite;
-}
-.hr-palm, .hr-finger { fill: none; stroke: #ffffff; stroke-width: 2.5; }
-.hr-nail { fill: #ffffff; opacity: 0.85; }
-@keyframes hand-drift {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(-1deg); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hand-relief { animation: none; }
-}
-@media (max-width: 719px) {
-  .hand-relief { height: 58%; opacity: 0.4; right: -10%; }
-}
-
 /* Insignia flotante de valoración sobre la foto del hero */
 .hero-badge {
   position: absolute;
