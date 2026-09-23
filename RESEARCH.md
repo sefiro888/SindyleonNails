@@ -8,7 +8,9 @@ Fecha de consulta: **23 de septiembre de 2026**.
 |---|---|---|
 | Booksy (perfil del negocio) | https://booksy.com/es-es/23381_sindyleonnailsdesign_salon-de-unas_69860_balos | Completo (sin login) |
 | Instagram | https://www.instagram.com/sindyleonnailsdesign/?hl=es | Parcial (bio y grid visibles sin login; publicaciones individuales requieren sesión) |
-| Google Search | — | Bloqueado por verificación anti-bot (captcha). No se pudo confirmar un perfil de Google Business independiente. |
+| Google Business (Google Maps) | Enlace compartido por el usuario el 23/09/2026 | Completo (sin login) — actualiza y corrige el intento anterior por Google Search, que sí estuvo bloqueado por captcha |
+| Instagram — publicación "5 maneras de ayudar a tu manicurista" | https://www.instagram.com/p/DHo6DmvIAz4/ | Texto de los 5 pasos recuperado (3 vía navegación, 2 vía capturas aportadas por el usuario) |
+| Instagram — publicación sobre el curso de uñas | https://www.instagram.com/p/C_bQpbHo2rX/ | Pie de foto y fecha recuperados; el vídeo no se descarga, solo se enlaza |
 | Facebook / directorios adicionales | — | No localizados con certeza suficiente para atribuirlos al mismo negocio; no se usaron. |
 
 ## Datos confirmados (coinciden en al menos dos fuentes)
@@ -48,14 +50,30 @@ Fecha de consulta: **23 de septiembre de 2026**.
 - **Portfolio (Booksy, 49+ fotos propias revisadas):** predominan uñas almendradas/stiletto de longitud media-larga, con francesa clásica y de color, baby boomer, diseños florales delicados (flores 3D, margaritas), animal print, líneas doradas finas tipo "line art", motivos celestes (soles, estrellas) en dorado sobre base verde salvia, y decoraciones con pedrería. Buen dominio de técnicas de precisión (líneas finas, encapsulado) y trabajos "muy elaborados" junto a opciones más discretas.
 - **Reseñas:** temas recurrentes (varias reseñas, no una sola): trato delicado y profesional, resultados detallistas, atención personalizada (mencionan café/agua), constancia en la calidad. Una reseña negativa documentada fue respondida por el negocio de forma extensa y profesional — se usa solo como referencia de tono de atención, no se cita literalmente en la web.
 
+## Google Business (añadido 23/09/2026)
+
+- **Nombre:** "Sindy Leon Nails Design" · **4,3 / 5 sobre 119 opiniones** (Google indica explícitamente "No se verificaron las opiniones").
+- **Dirección:** C. Primero de Mayo, 129, Loc 5, 35110 Vecindario, Las Palmas — coincide con Booksy.
+- **Dato nuevo:** el estudio está **ubicado dentro del Hotel Avenida de Canarias**.
+- **Teléfono:** 697 94 32 91 — mismos dígitos que el resto de fuentes, solo cambia el formato.
+- Reseñas destacadas (temas repetidos en varias opiniones, no una sola): "profesionalidad, limpieza, trato excelente"; "buen trato y buen rollo"; resultado de uñas "de 5 estrellas". Existe también alguna reseña negativa con respuesta extensa del negocio — no se usa como cita en la web.
+- No se consiguieron descargar fotos de la galería de Google (el visor no lo permitió en la sesión de investigación); las fotos usadas en la web proceden de Booksy y de material aportado directamente por el usuario.
+
+## Instagram — contenido adicional (añadido 23/09/2026)
+
+- **"5 maneras de ayudar a tu manicurista"** (25/03/2025): Llegá en hora · Elige de antemano · El celu en el bolso · Prestá atención · Relax. Texto completo recuperado y usado en `estudio.html`.
+- **Publicación sobre el curso de uñas** (02/09/2024): agradecimiento de Sindy a las alumnas de su curso — confirma que **el estudio también imparte formación en uñas**. Se enlaza desde `estudio.html`, sin crear una página dedicada (no hay más detalles verificados sobre el curso: duración, precio o próximas convocatorias).
+- **Línea de esmaltes propia**: fotos aportadas por el usuario muestran botes de "Esmalte Permanente" de marca "Sindy León Nails Design" numerados, en una estantería del propio local — confirma que venden producto de marca propia además de los servicios.
+
 ## No verificado / pendiente de confirmar con Sindy
 
-- Perfil de Google Business independiente (bloqueado por captcha durante la investigación).
 - Página de Facebook oficial (no localizada con certeza).
 - Horario exacto de domingo (confirmar si es fijo o estacional).
 - Certificaciones, años de experiencia o historia del salón — no publicados en las fuentes revisadas, por lo que **no se incluyen** en la web.
 - Nombres completos y roles exactos del equipo más allá de "Sindy León, Astrid, Sheila, Milena".
+- Detalles del curso de uñas (duración, precio, periodicidad) — solo se sabe que existe, por la publicación de Instagram.
 
 ## Discrepancias encontradas
 
-Ninguna discrepancia relevante: el nombre, dirección y teléfono proporcionados inicialmente coinciden con lo verificado en Booksy e Instagram. La única variación es de formato del nombre comercial según la plataforma (ver arriba), que no afecta a la identidad del negocio.
+- **Valoración**: Booksy marca **4,8/5 sobre 631 reseñas verificadas**; Google marca **4,3/5 sobre 119 reseñas no verificadas**. La web usa Booksy como cifra principal (es la plataforma de reserva integrada en el sitio y tiene una muestra mucho mayor de reseñas verificadas); la cifra de Google se menciona aparte, con su propia fuente, en `estudio.html`.
+- El resto de datos (nombre, dirección, teléfono) coincide entre Booksy, Instagram y Google. La única variación es de formato del nombre comercial y del teléfono según la plataforma, que no afecta a la identidad del negocio.
