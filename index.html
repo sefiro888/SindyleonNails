@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=4">
+<link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 <body>
 
@@ -52,37 +52,38 @@
 
 <main id="contenido">
 
+  <!-- Recortes orgánicos del hero (definidos una vez, referenciados por CSS) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="heroClip" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.78 C0.86,0.78 0.78,1 0.58,1 H0 Z"/>
+      </clipPath>
+      <clipPath id="heroClipMobile" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.93 C0.92,0.93 0.88,1 0.8,1 H0 Z"/>
+      </clipPath>
+    </defs>
+  </svg>
+
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-media" id="heroMedia">
+    <div class="hero-organic" id="heroOrganic">
       <div class="hero-slideshow">
-        <img class="hero-slide is-active" src="assets/img/portfolio/nail-12.jpg" alt="Manicura francesa con contorno dorado y flores blancas en 3D, trabajo real de Sindy León Nails Design">
-        <img class="hero-slide" src="assets/img/portfolio/nail-26.jpg" alt="Diseño marino muy elaborado con flores 3D, conchas y pedrería dorada, trabajo real del estudio">
-        <img class="hero-slide" src="assets/img/portfolio/nail-02.jpg" alt="Francesa blanca con flor dorada en 3D y pedrería, trabajo real del estudio">
-        <img class="hero-slide" src="assets/img/portfolio/nail-28.jpg" alt="Francesa verde menta con contorno dorado y margaritas, trabajo real del estudio">
+        <img class="hero-photo is-active" src="assets/img/portfolio/nail-12.jpg" alt="Manicura francesa con contorno dorado y flores blancas en 3D, trabajo real de Sindy León Nails Design">
+        <img class="hero-photo" src="assets/img/portfolio/nail-26.jpg" alt="Diseño marino muy elaborado con flores 3D, conchas y pedrería dorada, trabajo real del estudio">
+        <img class="hero-photo" src="assets/img/portfolio/nail-15.jpg" alt="Base verde salvia con line-art dorado, trabajo real del estudio">
+        <img class="hero-photo" src="assets/img/portfolio/nail-28.jpg" alt="Francesa verde menta con contorno dorado y margaritas, trabajo real del estudio">
       </div>
-
-      <div class="hero-media-veil" aria-hidden="true"></div>
-      <div class="hero-badge">
-        <span class="stars" aria-hidden="true">★★★★★</span>
-        <span>4,8 · 631 reseñas en Booksy</span>
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow eyebrow-light">Vecindario · Santa Lucía de Tirajana</p>
+        <h1>Diseños que empiezan en tu idea</h1>
+        <p class="hero-subtitle">Manicuras y nail art hechos a mano: acrílicas, kapping, semipermanente y decoración en 3D, con el mismo cuidado por el detalle en cada cita.</p>
+        <div class="hero-actions">
+          <a href="https://booksy.com/es-es/23381_sindyleonnailsdesign_salon-de-unas_69860_balos" target="_blank" rel="noopener" class="btn btn-primary">Reservar en Booksy</a>
+          <a href="disenos.html" class="hero-link-secondary">Explorar diseños <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero-fineprint">★ 4,8 sobre 631 reseñas verificadas en Booksy</p>
       </div>
-      <div class="hero-scroll-cue" aria-hidden="true">Descubre más</div>
-      <figure class="hero-accent">
-        <img src="assets/img/portfolio/nail-15.jpg" alt="Base verde salvia con line-art dorado, otro trabajo real del estudio">
-        <span>Línea dorada</span>
-      </figure>
-    </div>
-    <div class="hero-copy">
-      <img src="assets/img/logo-transparent.png" alt="" class="hero-watermark" aria-hidden="true">
-      <p class="eyebrow hero-in" style="--d:0s">Vecindario · Santa Lucía de Tirajana</p>
-      <h1 class="hero-in" style="--d:0.12s">Sindy León<br><span>Nails Design</span></h1>
-      <p class="hero-lead hero-in" style="--d:0.24s">Expertos en realzar la belleza de tus manos. Acrílicas, kapping, semipermanente y diseños a medida, cita tras cita.</p>
-      <div class="hero-cta hero-in" style="--d:0.36s">
-        <a href="https://booksy.com/es-es/23381_sindyleonnailsdesign_salon-de-unas_69860_balos" target="_blank" rel="noopener" class="btn btn-primary">Reservar en Booksy</a>
-        <a href="https://wa.me/34697943291?text=Hola%2C%20quer%C3%ADa%20consultar%20una%20cita%20en%20Sindy%20Leon%20Nails%20Design" target="_blank" rel="noopener" class="btn btn-secondary">Consultar por WhatsApp</a>
-      </div>
-      <p class="hero-rating hero-in" style="--d:0.46s">Equipo de 4 profesionales · Local en Vecindario · @sindyleonnailsdesign</p>
     </div>
   </section>
 
@@ -272,6 +273,6 @@
   <a href="https://wa.me/34697943291?text=Hola%2C%20quer%C3%ADa%20consultar%20una%20cita%20en%20Sindy%20Leon%20Nails%20Design" target="_blank" rel="noopener" class="btn btn-secondary">WhatsApp</a>
 </div>
 
-<script src="js/main.js?v=4"></script>
+<script src="js/main.js?v=6"></script>
 </body>
 </html>

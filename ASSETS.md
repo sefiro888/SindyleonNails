@@ -10,6 +10,12 @@ Fecha de descarga: 23 de septiembre de 2026.
 | `assets/img/logo-transparent.png` | Misma imagen anterior con el fondo blanco convertido a transparente (umbral de color, sin redibujar el trazo) para integrarse sobre fondos claros en cabecera/pie | Propio confirmado — derivado técnico del original |
 | `assets/img/logo-mark.png` | Recorte del monograma "sl" de la misma imagen, también con fondo transparente, usado como icono de marca junto al nombre en texto real (HTML) en la cabecera | Propio confirmado — derivado técnico del original |
 
+## Foto del local
+
+| Archivo | Origen | Estado |
+|---|---|---|
+| `assets/img/portada.png` | Proporcionada por el usuario el 23/09/2026; según indica, la rescató del perfil de Google (Google Business) del negocio | Propio confirmado — foto real del interior del estudio (dos puestos de trabajo, espejos, cartel de pared con el monograma "sl"). **Aún no incorporada al sitio**: se reserva para `estudio.html`, ya que muestra el espacio pero no trabajos de uñas, por lo que no encajaba como imagen de portada/hero según el criterio de que el hero muestre el producto (manicuras) |
+
 ## Fotografías de trabajos (portfolio)
 
 Todas proceden del CDN público de fotos de Booksy (`d375139ucebi94.cloudfront.net`), vinculado al perfil verificado del negocio (`booksy.com/.../23381_sindyleonnailsdesign_...`). Se conservan sin marca de agua porque Booksy no la aplica a estas fotos; no se ha eliminado ninguna atribución. Guardadas en `assets/img/portfolio/` a partir de la miniatura pública `size=640x0` del propio Booksy.

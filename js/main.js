@@ -1,34 +1,16 @@
 (function () {
   "use strict";
 
+  /* Rotación de fotos del hero (crossfade) */
+  var heroPhotos = document.querySelectorAll(".hero-photo");
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  /* Presentación de fotos del hero con transición (Ken Burns) */
-  var heroSlides = document.querySelectorAll(".hero-slide");
-  if (heroSlides.length > 1 && !reduceMotion) {
-    var currentSlide = 0;
+  if (heroPhotos.length > 1 && !reduceMotion) {
+    var currentPhoto = 0;
     setInterval(function () {
-      heroSlides[currentSlide].classList.remove("is-active");
-      currentSlide = (currentSlide + 1) % heroSlides.length;
-      heroSlides[currentSlide].classList.add("is-active");
-    }, 5000);
-  }
-
-  /* Parallax sutil de la foto del hero al hacer scroll */
-  var heroMedia = document.getElementById("heroMedia");
-  if (heroMedia && !reduceMotion) {
-    var slideshow = heroMedia.querySelector(".hero-slideshow");
-    var ticking = false;
-    window.addEventListener("scroll", function () {
-      if (!ticking) {
-        window.requestAnimationFrame(function () {
-          var offset = Math.min(window.scrollY * 0.15, 60);
-          slideshow.style.transform = "translateY(" + offset + "px)";
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }, { passive: true });
+      heroPhotos[currentPhoto].classList.remove("is-active");
+      currentPhoto = (currentPhoto + 1) % heroPhotos.length;
+      heroPhotos[currentPhoto].classList.add("is-active");
+    }, 4500);
   }
 
   /* Aparición progresiva al hacer scroll */
